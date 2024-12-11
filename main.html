@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Мясная лавка</title>
+    <script>
+        function addToCart(productName) {
+            alert(productName + " добавлено в корзину!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Мясная лавка</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html"><u>Главная</u></a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Популярные товары</h2>
+            <div class="product">
+                <img src="images/fullsize.jpg" alt="Говядина ">
+                <h3>Говяжья шея</h3>
+                <p>Цена: 400 руб/кг.</p>
+                <button onclick="addToCart('Говяжья шея')">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="images/maxresdefault.jpg" alt="Свинина ">
+                <h3>Ребра свинины</h3>
+                <p>Цена: 600 руб/кг.</p>
+                <button onclick="addToCart('Ребра свинины')">Добавить в корзину</button>
+            </div>           
+            <div class="product">
+                <img src="images/sddefault.jpg" alt="Курица ">
+                <h3>Куриная грудка</h3>
+                <p>Цена: 250 руб/кг.</p>
+                <button onclick="addToCart('Куриная грудка')">Добавить в корзину</button>
+            </div>  
+        </section>      
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Свиное мясо - Мясная лавка</title>
+    <script>
+        function addToCart(productName) {
+            alert(productName + " добавлено в корзину!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Мясная лавка</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Каталог товаров</h2>
+            <div class="product">
+                <img src="images/images.jpg" alt="Свиные отбивные">
+                <h4>Свиные отбивные</h4>
+                <p>Описание: Сочные свиные отбивные, идеально подходят для жарки.</p>
+                <p>Цена: 450 руб. за 1 кг</p>
+                <button onclick="addToCart('Свиные отбивные')">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="images/maxresdefault.jpg" alt="Свиные ребрышки">
+                <h4>Свиные ребрышки</h4>
+                <p>Описание: Вкусные свиные ребрышки, отлично подходят для запекания.</p>
+                <p>Цена: 500 руб. за 1 кг</p>
+                <button onclick="addToCart('Свиные ребрышки')">Добавить в корзину</button>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

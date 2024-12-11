@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Куриное мясо - Мясная лавка</title>
+    <script>
+        function addToCart(productName) {
+            alert(productName + " добавлено в корзину!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Мясная лавка</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Каталог товаров</h2>
+            <div class="product">
+                <img src="images/ribay-01_800_600_100.jpg" alt="Говяжий стейк">
+                <h4>Говяжий стейк</h4>
+                <p>Описание: Отборный говяжий стейк, идеален для гриля.</p>
+                <p>Цена: 800 руб. за 1 кг</p>
+                <button onclick="addToCart('Говяжий стейк')">Добавить в корзину</button>
+
+            </div>
+            <div class="product">
+                <img src="images/1285-ed4_wide.jpg" alt="Говяжий фарш">
+                <h4>Говяжий фарш</h4>
+                <p>Описание: Отборный говяжий фарш, идеален для приготовления котлет.</p>
+                <p>Цена: 500 руб. за 1 кг</p>
+                <button onclick="addToCart('Говяжий фарш')">Добавить в корзину</button>
+
+        </section>
+    </main>
+</body>
+</html>

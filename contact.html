@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Контакты - Мясная лавка</title>
+    <script>
+        function addToCart(productName) {
+            alert(productName + " добавлено в корзину!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Мясная лавка</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contact.html"><u>Контакты</u></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h2>Контактная информация</h2>
+            <p>Телефон: <a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
+            <p>Email: <a href="mailto:meatshop@gmail.com">meatshop@gmail.com</a></p>
+            <p>Адрес: ул. Мясная, д. 1, Город, Страна</p>
+        </section>
+        <section class="contact-form">
+            <h2>Связаться с нами</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

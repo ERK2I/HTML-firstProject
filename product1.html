@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Куриное мясо - Мясная лавка</title>
+    <script>
+        function addToCart(productName) {
+            alert(productName + " добавлено в корзину!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Мясная лавка</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Каталог товаров</h2>
+            <div class="product">
+                <img src="images/sddefault.jpg" alt="Куриная грудка">
+                <h4>Куриная грудка</h4>
+                <p>Описание: Свежая куриная грудка, без костей.</p>
+                <p>Цена: 400 руб. за 1 кг</p>
+                <button onclick="addToCart('Куриная грудка')">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="images/5q5brjbelfxa1pcz74dzsquhck497y4z.jpg" alt="Куриное бедро">
+                <h4>Куриное бедро</h4>
+                <p>Описание: Сочные куриные бедра, идеальны для запекания.</p>
+                <p>Цена: 350 руб. за 1 кг</p>
+                <button onclick="addToCart('Куриное бедро')">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="images/ub3f4sgnc9boty59rk305lbmr2ukfrdt.jpg" alt="Куриные крылышки">
+                <h4>Куриные крылышки</h4>
+                <p>Описание: Хрустящие куриные крылышки, отлично подходят для жарки.</p>
+                <p>Цена: 300 руб. за 1 кг</p>
+                <button onclick="addToCart('Куриные крылышки')">Добавить в корзину</button>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>
